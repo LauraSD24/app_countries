@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { createContext } from "react";
 
 export const ContextProviderCountries = createContext();
@@ -16830,10 +16830,16 @@ export function ContextCountries({children}) {
         }
         ]
       );
-    
+    const [listSearch,setListSearch] = useState([]);
+    const [loader, setLoader] = useState(true);
+    const [countrySelected,setCountrySelected]=useState(null);
     return(
-        <ContextProviderCountries.Provider value={{listCountries}}>
+        <ContextProviderCountries.Provider value={{listCountries,listSearch,setListSearch,loader, setLoader,countrySelected,setCountrySelected}}>
             {children}
         </ContextProviderCountries.Provider>
     )
+}
+
+export function useContextCountry() {
+  return useContext(ContextProviderCountries);
 }
