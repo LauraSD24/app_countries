@@ -16833,6 +16833,7 @@ export function ContextCountries({children}) {
     const [listSearch,setListSearch] = useState([]);
     const [loader, setLoader] = useState(true);
     const [countrySelected,setCountrySelected]=useState(null);
+
     return(
         <ContextProviderCountries.Provider value={{listCountries,listSearch,setListSearch,loader, setLoader,countrySelected,setCountrySelected}}>
             {children}

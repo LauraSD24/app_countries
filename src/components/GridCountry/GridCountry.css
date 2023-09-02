@@ -12,6 +12,12 @@
     background-color: var(--White);
     box-shadow: var(--box-shadow);
     border-radius: var(--radius);
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+.grid_item:hover{
+    box-shadow: var(--box-shadow-hover);
 }
 
 .item_img{

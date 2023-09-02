@@ -16,6 +16,7 @@
     --White: hsl(0, 0%, 100%);
     --width-container: 90%;
     --box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.151);
+    --box-shadow-hover: 0px 0px 3px 6px rgba(0, 0, 0, 0.151);
     --radius: 5px;
 }
 

@@ -1,17 +1,15 @@
-import GridCountry from "./components/GridCountry/GridCountry.jsx";
+import Container from "./components/container/Container.jsx";
 import Nav from "./components/nav/Nav.jsx";
-import Search from "./components/search/Search.jsx";
 import { ContextCountries } from "./context/ContextCountries.jsx";
 
 function App() {
   
   return (
     <div className="App">
-     <Nav/>
-     <ContextCountries>
-      <Search/>
-      <GridCountry/>
-     </ContextCountries>
+      <Nav />
+      <ContextCountries>
+       <Container/>
+      </ContextCountries>
     </div>
   );
 }
